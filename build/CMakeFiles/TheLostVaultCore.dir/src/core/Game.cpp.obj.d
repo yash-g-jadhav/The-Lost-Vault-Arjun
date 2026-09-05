@@ -1,28 +1,7 @@
-CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
- C:\MyGithub\The\ Lost\ Vault\src\main.cpp \
- C:\MyGithub\The\ Lost\ Vault\src\core/Application.h \
- C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
- c:\mingw\include\windows.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
- c:\mingw\include\windef.h c:\mingw\include\w32api.h \
- c:\mingw\include\sdkddkver.h c:\mingw\include\winnt.h \
- c:\mingw\include\winerror.h c:\mingw\include\string.h \
- c:\mingw\include\_mingw.h c:\mingw\include\msvcrtver.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
- c:\mingw\include\basetsd.h c:\mingw\include\pshpack4.h \
- c:\mingw\include\poppack.h c:\mingw\include\wincon.h \
- c:\mingw\include\winbase.h c:\mingw\include\wingdi.h \
- c:\mingw\include\winuser.h c:\mingw\include\dbt.h \
- c:\mingw\include\winnls.h c:\mingw\include\winver.h \
- c:\mingw\include\winnetwk.h c:\mingw\include\winreg.h \
- c:\mingw\include\winsvc.h \
- C:/MyGithub/The\ Lost\ Vault/include/KHR/khrplatform.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
- c:\mingw\include\stdint.h \
- C:/MyGithub/The\ Lost\ Vault/build/_deps/glfw-src/include/GLFW/glfw3.h \
+CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj: \
+ C:\MyGithub\The\ Lost\ Vault\src\core\Game.cpp \
  C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
- C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
- C:\MyGithub\The\ Lost\ Vault\src\core/Log.h \
+ C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -49,10 +28,16 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
- c:\mingw\include\wchar.h c:\mingw\include\stdio.h \
+ c:\mingw\include\wchar.h c:\mingw\include\_mingw.h \
+ c:\mingw\include\msvcrtver.h c:\mingw\include\w32api.h \
+ c:\mingw\include\sdkddkver.h c:\mingw\include\stdio.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
  c:\mingw\include\stdlib.h c:\mingw\include\time.h \
  c:\mingw\include\sys\types.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
+ c:\mingw\include\stdint.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h \
@@ -115,4 +100,15 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
+ C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
+ c:\mingw\include\windows.h c:\mingw\include\windef.h \
+ c:\mingw\include\winnt.h c:\mingw\include\winerror.h \
+ c:\mingw\include\string.h c:\mingw\include\basetsd.h \
+ c:\mingw\include\pshpack4.h c:\mingw\include\poppack.h \
+ c:\mingw\include\wincon.h c:\mingw\include\winbase.h \
+ c:\mingw\include\wingdi.h c:\mingw\include\winuser.h \
+ c:\mingw\include\dbt.h c:\mingw\include\winnls.h \
+ c:\mingw\include\winver.h c:\mingw\include\winnetwk.h \
+ c:\mingw\include\winreg.h c:\mingw\include\winsvc.h \
+ C:/MyGithub/The\ Lost\ Vault/include/KHR/khrplatform.h

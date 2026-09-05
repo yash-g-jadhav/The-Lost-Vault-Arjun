@@ -30,6 +30,10 @@ FetchContent_MakeAvailable(glm)
 # Sources for core library
 set(CORE_SOURCES
     src/glad.c
+    src/core/Log.cpp
+    src/core/Clock.cpp
+    src/core/Game.cpp
+    src/core/Application.cpp
 )
 
 set(CORE_HEADERS
@@ -37,6 +41,10 @@ set(CORE_HEADERS
     include/KHR/khrplatform.h
     include/stb_image.h
     include/stb_truetype.h
+    src/core/Log.h
+    src/core/Clock.h
+    src/core/Game.h
+    src/core/Application.h
 )
 
 add_library(TheLostVaultCore STATIC ${CORE_SOURCES} ${CORE_HEADERS})

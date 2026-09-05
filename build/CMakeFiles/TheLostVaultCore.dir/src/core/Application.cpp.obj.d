@@ -1,6 +1,6 @@
-CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
- C:\MyGithub\The\ Lost\ Vault\src\main.cpp \
- C:\MyGithub\The\ Lost\ Vault\src\core/Application.h \
+CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj: \
+ C:\MyGithub\The\ Lost\ Vault\src\core\Application.cpp \
+ C:/MyGithub/The\ Lost\ Vault/src/core/Application.h \
  C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
  c:\mingw\include\windows.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
@@ -22,7 +22,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glfw-src/include/GLFW/glfw3.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
- C:\MyGithub\The\ Lost\ Vault\src\core/Log.h \
+ C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
@@ -115,4 +115,5 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h

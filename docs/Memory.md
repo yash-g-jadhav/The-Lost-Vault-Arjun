@@ -181,13 +181,14 @@ Or run the test binary directly: `./build/TheLostVaultTests`. See `Architecture.
 
 > **Update this section at the end of every implementation session.**
 
-- **Current phase:** Phase 0 — Project Setup (Completed)
-- **Last completed task:** Phase 0 — Project Setup: Initialized repository structure (`src/`, `assets/`, `include/`, `tests/`), `CMakeLists.txt` with GLFW 3.4 and GLM 1.0.1 via `FetchContent`, vendored GLAD OpenGL 3.3 core profile loader (`include/glad/glad.h`, `include/KHR/khrplatform.h`, `src/glad.c`), `stb` headers (`include/stb_image.h`, `include/stb_truetype.h`), `src/main.cpp` (1280×720 resizable window, OpenGL 3.3 core context, clear color loop `#8FD3E8`, Escape key exit), and `README.md`.
-- **Current task:** Phase 0 — Project Setup (Complete).
-- **Next recommended task:** Phase 1 — OpenGL Foundation: Implement `core/Application`, `core/Game`, `core/Clock`, `core/Log`, and move the main loop into `Application::Run()` using the fixed-timestep loop pattern per `Architecture.md` §8 and `Phases.md` Phase 1.
-- **Build status:** Clean build (`cmake --build build` produces `build/TheLostVault.exe` with zero errors).
-- **Test status:** Verified executable launches, clears screen, and exits cleanly.
+- **Current phase:** Phase 1 — OpenGL Foundation (Completed)
+- **Last completed task:** Phase 1 — OpenGL Foundation: Implemented `core/Log.h/.cpp` (logging macros), `core/Clock.h/.cpp` (delta time and FPS calculation), `core/Game.h/.cpp` (global systems owner, `Update`/`Render` entry points), `core/Application.h/.cpp` (window ownership, OpenGL context creation, fixed-timestep loop at 60Hz with `0.25`s max-frametime clamp to prevent spiral-of-death stalls), and simplified `src/main.cpp`.
+- **Current task:** Phase 1 — OpenGL Foundation (Complete).
+- **Next recommended task:** Phase 2 — Rendering Primitives: Implement `graphics/Shader` (compile/link + uniform helpers), `graphics/Renderer2D` (`DrawQuad`, batching per `Architecture.md` §5–6), `graphics/PrimitiveFactory` (circle via triangle fan, per `Design.md`), and `assets/shaders/primitive.vert/.frag`.
+- **Build status:** Clean build (`cmake --build build` produces `build/TheLostVault.exe` with zero errors and zero warnings).
+- **Test status:** Verified executable launches, initializes core systems, runs fixed update loop, and exits cleanly.
 - **Known issues:** None.
 - **Known limitations:** See `PRD.md` §29 Future Improvements.
-- **Recent architectural decisions:** Standardized GLAD header API bindings with static `extern` declarations for target `TheLostVaultCore`.
+- **Recent architectural decisions:** Fixed-timestep loop (60Hz) decoupled from rendering and guarded with a 0.25s max-frametime clamp in `Application::Run()`.
+
 

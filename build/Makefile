@@ -180,6 +180,102 @@ glm/fast:
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
 .PHONY : glm/fast
 
+src/core/Application.obj: src/core/Application.cpp.obj
+.PHONY : src/core/Application.obj
+
+# target to build an object file
+src/core/Application.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj
+.PHONY : src/core/Application.cpp.obj
+
+src/core/Application.i: src/core/Application.cpp.i
+.PHONY : src/core/Application.i
+
+# target to preprocess a source file
+src/core/Application.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.i
+.PHONY : src/core/Application.cpp.i
+
+src/core/Application.s: src/core/Application.cpp.s
+.PHONY : src/core/Application.s
+
+# target to generate assembly for a file
+src/core/Application.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.s
+.PHONY : src/core/Application.cpp.s
+
+src/core/Clock.obj: src/core/Clock.cpp.obj
+.PHONY : src/core/Clock.obj
+
+# target to build an object file
+src/core/Clock.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Clock.cpp.obj
+.PHONY : src/core/Clock.cpp.obj
+
+src/core/Clock.i: src/core/Clock.cpp.i
+.PHONY : src/core/Clock.i
+
+# target to preprocess a source file
+src/core/Clock.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Clock.cpp.i
+.PHONY : src/core/Clock.cpp.i
+
+src/core/Clock.s: src/core/Clock.cpp.s
+.PHONY : src/core/Clock.s
+
+# target to generate assembly for a file
+src/core/Clock.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Clock.cpp.s
+.PHONY : src/core/Clock.cpp.s
+
+src/core/Game.obj: src/core/Game.cpp.obj
+.PHONY : src/core/Game.obj
+
+# target to build an object file
+src/core/Game.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj
+.PHONY : src/core/Game.cpp.obj
+
+src/core/Game.i: src/core/Game.cpp.i
+.PHONY : src/core/Game.i
+
+# target to preprocess a source file
+src/core/Game.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.i
+.PHONY : src/core/Game.cpp.i
+
+src/core/Game.s: src/core/Game.cpp.s
+.PHONY : src/core/Game.s
+
+# target to generate assembly for a file
+src/core/Game.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.s
+.PHONY : src/core/Game.cpp.s
+
+src/core/Log.obj: src/core/Log.cpp.obj
+.PHONY : src/core/Log.obj
+
+# target to build an object file
+src/core/Log.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.obj
+.PHONY : src/core/Log.cpp.obj
+
+src/core/Log.i: src/core/Log.cpp.i
+.PHONY : src/core/Log.i
+
+# target to preprocess a source file
+src/core/Log.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.i
+.PHONY : src/core/Log.cpp.i
+
+src/core/Log.s: src/core/Log.cpp.s
+.PHONY : src/core/Log.s
+
+# target to generate assembly for a file
+src/core/Log.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.s
+.PHONY : src/core/Log.cpp.s
+
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
@@ -241,6 +337,18 @@ help:
 	@echo ... TheLostVaultCore
 	@echo ... glfw
 	@echo ... glm
+	@echo ... src/core/Application.obj
+	@echo ... src/core/Application.i
+	@echo ... src/core/Application.s
+	@echo ... src/core/Clock.obj
+	@echo ... src/core/Clock.i
+	@echo ... src/core/Clock.s
+	@echo ... src/core/Game.obj
+	@echo ... src/core/Game.i
+	@echo ... src/core/Game.s
+	@echo ... src/core/Log.obj
+	@echo ... src/core/Log.i
+	@echo ... src/core/Log.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
