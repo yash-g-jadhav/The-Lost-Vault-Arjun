@@ -1,0 +1,15 @@
+C:/MyGithub/The Lost Vault/build/CMakeFiles/TheLostVaultCore.dir
+C:/MyGithub/The Lost Vault/build/CMakeFiles/TheLostVault.dir
+C:/MyGithub/The Lost Vault/build/CMakeFiles/edit_cache.dir
+C:/MyGithub/The Lost Vault/build/CMakeFiles/rebuild_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/CMakeFiles/edit_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/CMakeFiles/rebuild_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/src/CMakeFiles/glfw.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/src/CMakeFiles/update_mappings.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/src/CMakeFiles/edit_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glfw-build/src/CMakeFiles/rebuild_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glm-build/CMakeFiles/edit_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glm-build/CMakeFiles/rebuild_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glm-build/glm/CMakeFiles/glm.dir
+C:/MyGithub/The Lost Vault/build/_deps/glm-build/glm/CMakeFiles/edit_cache.dir
+C:/MyGithub/The Lost Vault/build/_deps/glm-build/glm/CMakeFiles/rebuild_cache.dir

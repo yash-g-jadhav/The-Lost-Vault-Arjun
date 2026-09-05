@@ -1,0 +1,3 @@
+C:\Users\yashj\AppData\Local\Programs\Python\Python310\Lib\site-packages\cmake\data\bin\cmake.exe -E rm -f CMakeFiles\TheLostVault.dir/objects.a
+C:\MinGW\bin\ar.exe qc CMakeFiles\TheLostVault.dir/objects.a @CMakeFiles\TheLostVault.dir\objects1.rsp
+C:\MinGW\bin\c++.exe -Wl,--whole-archive CMakeFiles\TheLostVault.dir/objects.a -Wl,--no-whole-archive -o TheLostVault.exe -Wl,--out-implib,libTheLostVault.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\TheLostVault.dir\linkLibs.rsp

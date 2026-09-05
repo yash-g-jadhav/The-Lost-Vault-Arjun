@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/MyGithub/The Lost Vault/build/cmake_install.cmake",
+		"C:/MyGithub/The Lost Vault/build/_deps/glfw-build/cmake_install.cmake",
+		"C:/MyGithub/The Lost Vault/build/_deps/glfw-build/src/cmake_install.cmake",
+		"C:/MyGithub/The Lost Vault/build/_deps/glm-build/cmake_install.cmake",
+		"C:/MyGithub/The Lost Vault/build/_deps/glm-build/glm/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
