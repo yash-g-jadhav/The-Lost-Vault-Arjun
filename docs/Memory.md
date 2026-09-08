@@ -181,14 +181,15 @@ Or run the test binary directly: `./build/TheLostVaultTests`. See `Architecture.
 
 > **Update this section at the end of every implementation session.**
 
-- **Current phase:** Phase 1 — OpenGL Foundation (Completed)
-- **Last completed task:** Phase 1 — OpenGL Foundation: Implemented `core/Log.h/.cpp` (logging macros), `core/Clock.h/.cpp` (delta time and FPS calculation), `core/Game.h/.cpp` (global systems owner, `Update`/`Render` entry points), `core/Application.h/.cpp` (window ownership, OpenGL context creation, fixed-timestep loop at 60Hz with `0.25`s max-frametime clamp to prevent spiral-of-death stalls), and simplified `src/main.cpp`.
-- **Current task:** Phase 1 — OpenGL Foundation (Complete).
-- **Next recommended task:** Phase 2 — Rendering Primitives: Implement `graphics/Shader` (compile/link + uniform helpers), `graphics/Renderer2D` (`DrawQuad`, batching per `Architecture.md` §5–6), `graphics/PrimitiveFactory` (circle via triangle fan, per `Design.md`), and `assets/shaders/primitive.vert/.frag`.
-- **Build status:** Clean build (`cmake --build build` produces `build/TheLostVault.exe` with zero errors and zero warnings).
-- **Test status:** Verified executable launches, initializes core systems, runs fixed update loop, and exits cleanly.
+- **Current phase:** Phase 2 — Rendering Primitives (Completed)
+- **Last completed task:** Phase 2 — Implemented `graphics/Shader` (file-loading + embedded-source fallback, compile/link, cached uniform helpers), `graphics/PrimitiveFactory` (unit quad VAO/VBO/EBO and triangle-fan circle mesh), `graphics/Renderer2D` (batched `DrawQuad` + CPU-side fan `DrawCircle` both pushing into a single `BatchVertex` VBO/EBO via `BeginScene`/`Flush`/`EndScene`; batch auto-flushes at 10 000 vertex capacity), and `assets/shaders/primitive.vert/.frag` (vertex color attribute `a_Color` at location 2 → `v_Color` varying, used in fragment stage). `Game::Render()` demonstrates sky quad, sand quad, grass quad, two circles (sun, gem), and a tree trunk+foliage quad rendered via the new renderer.
+- **Current task:** Phase 2 — Rendering Primitives (Complete).
+- **Next recommended task:** Phase 3 — Player: Implement `input/InputManager` (Action enum + GLFW polling), `entities/GameObject`, `entities/TransformComponent`, `entities/Player` with hierarchical rendering (body root + limb child transforms) and WASD/arrow movement per Rules.md §1 (8-directional, normalized diagonal speed).
+- **Build status:** Clean build — `cmake --build build --config Debug` exits with code 0, zero errors, zero warnings. Executable: `build/Debug/TheLostVault.exe`.
+- **Test status:** Manual visual check — screen shows sky-blue background with sand, grass, tree (trunk+foliage), sun and gem circles. No crashes on launch or exit.
 - **Known issues:** None.
-- **Known limitations:** See `PRD.md` §29 Future Improvements.
-- **Recent architectural decisions:** Fixed-timestep loop (60Hz) decoupled from rendering and guarded with a 0.25s max-frametime clamp in `Application::Run()`.
-
-
+- **Known limitations:** `circleMesh` and `quadMesh` fields in `Renderer2D` are initialized but no longer used for draw calls (both paths now batch through `m_BatchVBO`). They're kept to avoid an unapproved restructure; they can be removed in a future cleanup pass.
+- **Recent architectural decisions:**
+  - `DrawCircle` moved fully onto the batch path (CPU triangle-fan expansion into `BatchVertex` buffer) so that the single VAO/shader covers both quads and circles without a separate VAO that would lack the `a_Color` attribute at location 2.
+  - Fragment shader dropped the `u_Color` uniform; color is now carried entirely per-vertex via `v_Color`.
+  - `DrawQuad` applies the full 4×4 transform to each local vertex on the CPU before batching (world-space positions in the vertex buffer), so `u_MVP` in `Flush` carries the pure view-projection matrix — this is the standard batch-renderer pattern.

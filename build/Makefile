@@ -300,6 +300,78 @@ src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/glad.c.s
 .PHONY : src/glad.c.s
 
+src/graphics/PrimitiveFactory.obj: src/graphics/PrimitiveFactory.cpp.obj
+.PHONY : src/graphics/PrimitiveFactory.obj
+
+# target to build an object file
+src/graphics/PrimitiveFactory.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj
+.PHONY : src/graphics/PrimitiveFactory.cpp.obj
+
+src/graphics/PrimitiveFactory.i: src/graphics/PrimitiveFactory.cpp.i
+.PHONY : src/graphics/PrimitiveFactory.i
+
+# target to preprocess a source file
+src/graphics/PrimitiveFactory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.i
+.PHONY : src/graphics/PrimitiveFactory.cpp.i
+
+src/graphics/PrimitiveFactory.s: src/graphics/PrimitiveFactory.cpp.s
+.PHONY : src/graphics/PrimitiveFactory.s
+
+# target to generate assembly for a file
+src/graphics/PrimitiveFactory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.s
+.PHONY : src/graphics/PrimitiveFactory.cpp.s
+
+src/graphics/Renderer2D.obj: src/graphics/Renderer2D.cpp.obj
+.PHONY : src/graphics/Renderer2D.obj
+
+# target to build an object file
+src/graphics/Renderer2D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj
+.PHONY : src/graphics/Renderer2D.cpp.obj
+
+src/graphics/Renderer2D.i: src/graphics/Renderer2D.cpp.i
+.PHONY : src/graphics/Renderer2D.i
+
+# target to preprocess a source file
+src/graphics/Renderer2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.i
+.PHONY : src/graphics/Renderer2D.cpp.i
+
+src/graphics/Renderer2D.s: src/graphics/Renderer2D.cpp.s
+.PHONY : src/graphics/Renderer2D.s
+
+# target to generate assembly for a file
+src/graphics/Renderer2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.s
+.PHONY : src/graphics/Renderer2D.cpp.s
+
+src/graphics/Shader.obj: src/graphics/Shader.cpp.obj
+.PHONY : src/graphics/Shader.obj
+
+# target to build an object file
+src/graphics/Shader.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.obj
+.PHONY : src/graphics/Shader.cpp.obj
+
+src/graphics/Shader.i: src/graphics/Shader.cpp.i
+.PHONY : src/graphics/Shader.i
+
+# target to preprocess a source file
+src/graphics/Shader.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.i
+.PHONY : src/graphics/Shader.cpp.i
+
+src/graphics/Shader.s: src/graphics/Shader.cpp.s
+.PHONY : src/graphics/Shader.s
+
+# target to generate assembly for a file
+src/graphics/Shader.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.s
+.PHONY : src/graphics/Shader.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -352,6 +424,15 @@ help:
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
+	@echo ... src/graphics/PrimitiveFactory.obj
+	@echo ... src/graphics/PrimitiveFactory.i
+	@echo ... src/graphics/PrimitiveFactory.s
+	@echo ... src/graphics/Renderer2D.obj
+	@echo ... src/graphics/Renderer2D.i
+	@echo ... src/graphics/Renderer2D.s
+	@echo ... src/graphics/Shader.obj
+	@echo ... src/graphics/Shader.i
+	@echo ... src/graphics/Shader.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

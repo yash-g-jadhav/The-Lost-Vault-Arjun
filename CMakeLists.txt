@@ -34,6 +34,9 @@ set(CORE_SOURCES
     src/core/Clock.cpp
     src/core/Game.cpp
     src/core/Application.cpp
+    src/graphics/Shader.cpp
+    src/graphics/PrimitiveFactory.cpp
+    src/graphics/Renderer2D.cpp
 )
 
 set(CORE_HEADERS
@@ -45,9 +48,14 @@ set(CORE_HEADERS
     src/core/Clock.h
     src/core/Game.h
     src/core/Application.h
+    src/graphics/Shader.h
+    src/graphics/PrimitiveFactory.h
+    src/graphics/Renderer2D.h
 )
 
 add_library(TheLostVaultCore STATIC ${CORE_SOURCES} ${CORE_HEADERS})
+
+target_compile_definitions(TheLostVaultCore PUBLIC GLM_FORCE_CTOR_INIT)
 
 target_include_directories(TheLostVaultCore PUBLIC
     ${CMAKE_CURRENT_SOURCE_DIR}/include

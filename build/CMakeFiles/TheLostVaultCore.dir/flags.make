@@ -3,13 +3,13 @@
 
 # compile C with C:/MinGW/bin/gcc.exe
 # compile CXX with C:/MinGW/bin/c++.exe
-C_DEFINES = 
+C_DEFINES = -DGLM_FORCE_CTOR_INIT
 
 C_INCLUDES = @CMakeFiles\TheLostVaultCore.dir\includes_C.rsp
 
 C_FLAGS = 
 
-CXX_DEFINES = 
+CXX_DEFINES = -DGLM_FORCE_CTOR_INIT
 
 CXX_INCLUDES = @CMakeFiles\TheLostVaultCore.dir\includes_CXX.rsp
 

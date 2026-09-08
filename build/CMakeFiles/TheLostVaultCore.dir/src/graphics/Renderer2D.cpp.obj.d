@@ -1,6 +1,6 @@
-CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
- C:\MyGithub\The\ Lost\ Vault\src\main.cpp \
- C:\MyGithub\The\ Lost\ Vault\src\core/Application.h \
+CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj: \
+ C:\MyGithub\The\ Lost\ Vault\src\graphics\Renderer2D.cpp \
+ C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
  C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
  c:\mingw\include\windows.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
@@ -19,9 +19,6 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  C:/MyGithub/The\ Lost\ Vault/include/KHR/khrplatform.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
  c:\mingw\include\stdint.h \
- C:/MyGithub/The\ Lost\ Vault/build/_deps/glfw-src/include/GLFW/glfw3.h \
- C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
- C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/glm.hpp \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/_fixes.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath \
@@ -271,8 +268,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
- C:\MyGithub\The\ Lost\ Vault\src\core/Log.h \
+ C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ios \
@@ -296,4 +292,16 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\istream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_projection.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\gtc\constants.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\scalar_constants.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\scalar_constants.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\gtc\constants.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_projection.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_clip_space.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_clip_space.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.inl \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.inl

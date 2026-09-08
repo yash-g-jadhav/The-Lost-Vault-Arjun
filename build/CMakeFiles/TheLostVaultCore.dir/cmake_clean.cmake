@@ -9,6 +9,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.obj.d"
   "CMakeFiles/TheLostVaultCore.dir/src/glad.c.obj"
   "CMakeFiles/TheLostVaultCore.dir/src/glad.c.obj.d"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj.d"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj.d"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.obj"
+  "CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.obj.d"
   "libTheLostVaultCore.a"
   "libTheLostVaultCore.pdb"
 )

@@ -13,6 +13,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/MyGithub/The Lost Vault/src/core/Clock.cpp" "CMakeFiles/TheLostVaultCore.dir/src/core/Clock.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/core/Clock.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/core/Game.cpp" "CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/core/Log.cpp" "CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.obj.d"
+  "C:/MyGithub/The Lost Vault/src/graphics/PrimitiveFactory.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj.d"
+  "C:/MyGithub/The Lost Vault/src/graphics/Renderer2D.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj.d"
+  "C:/MyGithub/The Lost Vault/src/graphics/Shader.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
