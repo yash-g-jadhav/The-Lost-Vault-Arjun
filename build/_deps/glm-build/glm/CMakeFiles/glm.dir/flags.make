@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = @CMakeFiles\glm.dir\includes_CXX.rsp
 
-CXX_FLAGS = -std=c++1z
+CXX_FLAGS = -g -std=c++1z
 

@@ -58,3 +58,13 @@ LevelData LevelData::CreateDefaultLevel1() {
 
     return data;
 }
+
+std::vector<AABB> LevelData::GetTriggerBounds() const {
+    std::vector<AABB> triggers;
+    for (const auto& obj : staticObjects) {
+        if (obj.isTrigger) {
+            triggers.push_back(AABB(obj.position, obj.scale * 0.5f));
+        }
+    }
+    return triggers;
+}

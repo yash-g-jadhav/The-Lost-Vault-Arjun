@@ -45,6 +45,7 @@ set(CORE_SOURCES
     src/entities/ColliderComponent.cpp
     src/gameplay/CollisionSystem.cpp
     src/levels/LevelData.cpp
+    src/gameplay/GemSystem.cpp
 )
 
 set(CORE_HEADERS

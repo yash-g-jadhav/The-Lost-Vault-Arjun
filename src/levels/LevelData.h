@@ -13,6 +13,7 @@ struct StaticObjectData {
     float rotation{0.0f};
     glm::vec4 color{1.0f};
     bool isSolid{false};
+    bool isTrigger{false};
 };
 
 // LevelData: plain data struct containing raw parsed level parameters
@@ -27,6 +28,7 @@ struct LevelData {
     std::vector<StaticObjectData> staticObjects;
 
     std::vector<AABB> GetSolidObstacles() const;
+    std::vector<AABB> GetTriggerBounds() const; // includes gems and other triggers
 
     static LevelData CreateDefaultLevel1();
 };

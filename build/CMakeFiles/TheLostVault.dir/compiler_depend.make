@@ -31,6 +31,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h \
   C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h \
   C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h \
+  C:/MyGithub/The\ Lost\ Vault/src/gameplay/GemSystem.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
@@ -457,6 +458,16 @@ C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/system_error:
+
+c:/mingw/include/stdint.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/gameplay/GemSystem.h:
+
+c:/mingw/include/basetsd.h:
+
 C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h:
@@ -476,14 +487,6 @@ c:/mingw/include/string.h:
 C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h:
 
 c:/mingw/include/assert.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/system_error:
-
-c:/mingw/include/stdint.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h:
-
-c:/mingw/include/basetsd.h:
 
 c:/mingw/include/ctype.h:
 

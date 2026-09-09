@@ -6,6 +6,7 @@
 #include <glm/glm.hpp>
 
 // CollisionSystem: handles axis-separated AABB collision resolution (Rules.md §2).
+    // Also provides trigger overlap detection for non-solid objects such as gems.
 // First resolves X-axis movements against solid obstacles, then Y-axis movements.
 class CollisionSystem {
 public:
@@ -21,4 +22,6 @@ public:
     // Updates playerPos and playerBox in-place.
     static bool ResolveX(AABB& playerBox, glm::vec2& playerPos, const AABB& obstacle);
     static bool ResolveY(AABB& playerBox, glm::vec2& playerPos, const AABB& obstacle);
+    // Returns indices of trigger AABBs that intersect the player's collider.
+    static std::vector<size_t> DetectTriggerOverlaps(Player& player, const std::vector<AABB>& triggerBounds);
 };

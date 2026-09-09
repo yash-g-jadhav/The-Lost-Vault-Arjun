@@ -181,10 +181,10 @@ Or run the test binary directly: `./build/TheLostVaultTests`. See `Architecture.
 
 > **Update this section at the end of every implementation session.**
 
-- **Current phase:** Phase 5 — Collision (Completed)
+- **Current phase:** Phase 6 — Gems (In Progress)
 - **Last completed task:** Phase 5 — Collision: Implemented `utils/AABB.h`, `entities/ColliderComponent`, `gameplay/CollisionSystem` (axis-separated resolution), marked static Level 1 obstacles solid, added unit tests (`tests/test_collision.cpp`) and integrated collision resolution into `Game::Update`.
-- **Current task:** Phase 5 — Collision (Complete).
-- **Next recommended task:** Phase 6 — Gems: Implement `gameplay/GemSystem`, gem GameObject prefab, trigger-only overlap detection (extend `CollisionSystem`), add gem spawns to `level1.lvl`, and track `Player::collectedGemsThisLevel`.
+- **Current task:** Phase 6 — Gems: Implement `gameplay/GemSystem`, gem GameObject prefab, trigger-only overlap detection (extend `CollisionSystem`), add gem spawns to `level1.lvl`, and track `Player::collectedGemsThisLevel`.
+- **Next recommended task:** Phase 7 — Clues: Implement `gameplay/ClueSystem`, clue prefab, `StringTable`, and `UnlockCondition` usage.
 - **Build status:** Clean build — `cmake --build build --config Debug` exits with code 0, zero errors, zero warnings. Executable: `build/Debug/TheLostVault.exe`.
 - **Test status:** Verified build — `TheLostVaultCore` static library and `TheLostVault.exe` build cleanly and post-build step copies `assets/` to output directory.
 - **Known issues:** None.

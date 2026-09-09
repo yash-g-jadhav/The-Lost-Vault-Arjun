@@ -1,6 +1,7 @@
 #pragma once
 
 #include "graphics/Renderer2D.h"
+#include "gameplay/GemSystem.h"
 #include "graphics/Camera2D.h"
 #include "input/InputManager.h"
 #include "entities/Player.h"
@@ -32,5 +33,6 @@ private:
     InputManager inputManager;
     Camera2D     camera;
     Player       player;
+    GemSystem    gemSystem;
     LevelData    currentLevel;
 };

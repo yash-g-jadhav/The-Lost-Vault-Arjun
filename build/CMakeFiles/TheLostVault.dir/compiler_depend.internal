@@ -32,6 +32,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  C:/MyGithub/The Lost Vault/src/entities/GameObject.h
  C:/MyGithub/The Lost Vault/src/entities/Player.h
  C:/MyGithub/The Lost Vault/src/entities/TransformComponent.h
+ C:/MyGithub/The Lost Vault/src/gameplay/GemSystem.h
  C:/MyGithub/The Lost Vault/src/graphics/Camera2D.h
  C:/MyGithub/The Lost Vault/src/graphics/PrimitiveFactory.h
  C:/MyGithub/The Lost Vault/src/graphics/Renderer2D.h

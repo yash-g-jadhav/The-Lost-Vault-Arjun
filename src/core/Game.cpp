@@ -44,6 +44,8 @@ void Game::Update(double fixedDt) {
 
     // Resolve solid obstacle collision & level bounds clamping
     CollisionSystem::ResolvePlayerCollision(player, currentLevel.GetSolidObstacles(), currentLevel.bounds);
+    // Process trigger overlaps (gems, etc.)
+    gemSystem.Update(player, currentLevel.GetTriggerBounds());
 
     // Camera follows player, clamped to level bounds
     camera.Follow(player.GetPosition(), currentLevel.bounds, static_cast<float>(fixedDt));

@@ -47,7 +47,9 @@ public:
     glm::vec2      GetPosition() const { return transform.position; }
     PlayerState    GetState()    const { return state; }
     FacingDirection GetFacing()  const { return facing; }
-    int            GetLives()    const { return lives; }
+    int collectedGemsThisLevel{0};
+    int GetCollectedGems() const { return collectedGemsThisLevel; }
+    void IncrementCollectedGems() { ++collectedGemsThisLevel; }
 
     // Mutators used by LivesSystem / CheckpointSystem (later phases)
     void SetPosition(const glm::vec2& pos) { transform.position = pos; }

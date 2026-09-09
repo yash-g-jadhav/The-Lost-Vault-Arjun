@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLM_FORCE_CTOR_INIT
 
 CXX_INCLUDES = @CMakeFiles\TheLostVaultTests.dir\includes_CXX.rsp
 
-CXX_FLAGS = -std=c++1z
+CXX_FLAGS = -g -std=c++1z
 

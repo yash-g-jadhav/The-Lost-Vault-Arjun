@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/MyGithub/The Lost Vault/src/entities/Player.cpp" "CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/entities/TransformComponent.cpp" "CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/gameplay/CollisionSystem.cpp" "CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj.d"
+  "C:/MyGithub/The Lost Vault/src/gameplay/GemSystem.cpp" "CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/graphics/Camera2D.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/graphics/PrimitiveFactory.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/PrimitiveFactory.cpp.obj.d"
   "C:/MyGithub/The Lost Vault/src/graphics/Renderer2D.cpp" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj" "gcc" "CMakeFiles/TheLostVaultCore.dir/src/graphics/Renderer2D.cpp.obj.d"

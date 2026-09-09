@@ -419,6 +419,30 @@ src/gameplay/CollisionSystem.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.s
 .PHONY : src/gameplay/CollisionSystem.cpp.s
 
+src/gameplay/GemSystem.obj: src/gameplay/GemSystem.cpp.obj
+.PHONY : src/gameplay/GemSystem.obj
+
+# target to build an object file
+src/gameplay/GemSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj
+.PHONY : src/gameplay/GemSystem.cpp.obj
+
+src/gameplay/GemSystem.i: src/gameplay/GemSystem.cpp.i
+.PHONY : src/gameplay/GemSystem.i
+
+# target to preprocess a source file
+src/gameplay/GemSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.i
+.PHONY : src/gameplay/GemSystem.cpp.i
+
+src/gameplay/GemSystem.s: src/gameplay/GemSystem.cpp.s
+.PHONY : src/gameplay/GemSystem.s
+
+# target to generate assembly for a file
+src/gameplay/GemSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.s
+.PHONY : src/gameplay/GemSystem.cpp.s
+
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
@@ -677,6 +701,9 @@ help:
 	@echo ... src/gameplay/CollisionSystem.obj
 	@echo ... src/gameplay/CollisionSystem.i
 	@echo ... src/gameplay/CollisionSystem.s
+	@echo ... src/gameplay/GemSystem.obj
+	@echo ... src/gameplay/GemSystem.i
+	@echo ... src/gameplay/GemSystem.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s

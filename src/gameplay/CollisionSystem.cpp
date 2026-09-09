@@ -92,3 +92,17 @@ void CollisionSystem::ResolvePlayerCollision(Player& player, const std::vector<A
 
     player.SetPosition(playerPos);
 }
+
+// Detect trigger overlaps (e.g., gems) without position correction.
+std::vector<size_t> CollisionSystem::DetectTriggerOverlaps(Player& player, const std::vector<AABB>& triggerBounds) {
+    std::vector<size_t> overlappingIndices;
+    if (!player.collider) return overlappingIndices;
+    glm::vec2 playerPos = player.GetPosition();
+    AABB playerBox = player.collider->GetWorldBounds(playerPos);
+    for (size_t i = 0; i < triggerBounds.size(); ++i) {
+        if (playerBox.Intersects(triggerBounds[i])) {
+            overlappingIndices.push_back(i);
+        }
+    }
+    return overlappingIndices;
+}

@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj.d"
   "CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj"
   "CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj.d"
+  "CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj"
+  "CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj.d"
   "CMakeFiles/TheLostVaultCore.dir/src/glad.c.obj"
   "CMakeFiles/TheLostVaultCore.dir/src/glad.c.obj.d"
   "CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.obj"

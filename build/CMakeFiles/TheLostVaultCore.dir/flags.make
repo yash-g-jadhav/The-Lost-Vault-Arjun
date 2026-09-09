@@ -7,11 +7,11 @@ C_DEFINES = -DGLM_FORCE_CTOR_INIT
 
 C_INCLUDES = @CMakeFiles\TheLostVaultCore.dir\includes_C.rsp
 
-C_FLAGS = 
+C_FLAGS = -g
 
 CXX_DEFINES = -DGLM_FORCE_CTOR_INIT
 
 CXX_INCLUDES = @CMakeFiles\TheLostVaultCore.dir\includes_CXX.rsp
 
-CXX_FLAGS = -std=c++1z
+CXX_FLAGS = -g -std=c++1z
 

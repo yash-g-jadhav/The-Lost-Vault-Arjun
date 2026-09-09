@@ -1,43 +1,62 @@
-CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj: \
- C:\MyGithub\The\ Lost\ Vault\src\core\Application.cpp \
- C:/MyGithub/The\ Lost\ Vault/src/core/Application.h \
- C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
- c:\mingw\include\windows.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
- c:\mingw\include\windef.h c:\mingw\include\w32api.h \
- c:\mingw\include\sdkddkver.h c:\mingw\include\winnt.h \
- c:\mingw\include\winerror.h c:\mingw\include\string.h \
- c:\mingw\include\_mingw.h c:\mingw\include\msvcrtver.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
- c:\mingw\include\basetsd.h c:\mingw\include\pshpack4.h \
- c:\mingw\include\poppack.h c:\mingw\include\wincon.h \
- c:\mingw\include\winbase.h c:\mingw\include\wingdi.h \
- c:\mingw\include\winuser.h c:\mingw\include\dbt.h \
- c:\mingw\include\winnls.h c:\mingw\include\winver.h \
- c:\mingw\include\winnetwk.h c:\mingw\include\winreg.h \
- c:\mingw\include\winsvc.h \
- C:/MyGithub/The\ Lost\ Vault/include/KHR/khrplatform.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
- c:\mingw\include\stdint.h \
- C:/MyGithub/The\ Lost\ Vault/build/_deps/glfw-src/include/GLFW/glfw3.h \
- C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
- C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
- C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/glm.hpp \
- C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/_fixes.hpp \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath \
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/GemSystem.cpp.obj: \
+ C:\MyGithub\The\ Lost\ Vault\src\gameplay\GemSystem.cpp \
+ C:/MyGithub/The\ Lost\ Vault/src/gameplay/GemSystem.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++config.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\os_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\cpu_defines.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functexcept.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_defines.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cpp_type_traits.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\type_traits.h \
- c:\mingw\include\math.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\numeric_traits.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\concept_check.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_types.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\assertions.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ptr_traits.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\debug.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\new \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_lockfree_defines.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\alloc_traits.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
+ C:/MyGithub/The\ Lost\ Vault/src/utils/AABB.h \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/glm.hpp \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/_fixes.hpp \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cmath c:\mingw\include\math.h \
+ c:\mingw\include\_mingw.h c:\mingw\include\msvcrtver.h \
+ c:\mingw\include\w32api.h c:\mingw\include\sdkddkver.h \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/setup.hpp \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cassert \
  c:\mingw\include\assert.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstddef \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stddef.h \
  c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\simd\platform.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdint \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\type_traits \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stdint.h \
+ c:\mingw\include\stdint.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\climits \
  c:\mingw\include\limits.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cfloat \
@@ -178,108 +197,16 @@ CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj: \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/type_half.inl \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/integer.hpp \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/detail/func_integer.inl \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algobase.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functexcept.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_defines.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\numeric_traits.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_pair.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\move.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\concept_check.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_types.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator_base_funcs.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\assertions.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_iterator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ptr_traits.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\debug\debug.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\predefined_ops.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++allocator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\new_allocator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\new \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\exception \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_lockfree_defines.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\exception_ptr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\nested_exception.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\memoryfwd.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_construct.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\alloc_traits.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\alloc_traits.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_uninitialized.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tempbuf.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\typeinfo \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hash_bytes.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
- c:\mingw\include\wchar.h c:\mingw\include\stdio.h \
- c:\mingw\include\stdlib.h c:\mingw\include\time.h \
- c:\mingw\include\sys\types.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\atomicity.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr-default.h \
- c:\mingw\include\errno.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\atomic_word.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\concurrence.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\binders.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\utility \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_relops.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\initializer_list \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++locale.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\clocale \
- c:\mingw\include\locale.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype \
- c:\mingw\include\ctype.h c:\mingw\include\wctype.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream_insert.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cxxabi_forced.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\range_access.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\string_conversions.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdlib \
  c:\mingw\include\stdlib.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdio \
- c:\mingw\include\stdio.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\functional_hash.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocated_ptr.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
- C:/MyGithub/The\ Lost\ Vault/src/graphics/Shader.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
- C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\vector \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
- C:/MyGithub/The\ Lost\ Vault/src/gameplay/GemSystem.h \
- C:/MyGithub/The\ Lost\ Vault/src/utils/AABB.h \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
- c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_tempbuf.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
- C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h \
- C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h \
  C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h \
  C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h \
  C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h \
@@ -297,8 +224,74 @@ CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj: \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.inl \
  C:/MyGithub/The\ Lost\ Vault/src/entities/ColliderComponent.h \
  C:/MyGithub/The\ Lost\ Vault/src/entities/Component.h \
- C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h \
- C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\string \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stringfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\char_traits.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\postypes.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cwchar \
+ c:\mingw\include\wchar.h c:\mingw\include\stdio.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\stdarg.h \
+ c:\mingw\include\stdlib.h c:\mingw\include\time.h \
+ c:\mingw\include\sys\types.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\localefwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\c++locale.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\clocale \
+ c:\mingw\include\locale.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iosfwd \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cctype \
+ c:\mingw\include\ctype.h c:\mingw\include\wctype.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\ostream_insert.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\cxxabi_forced.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_function.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\binders.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\atomicity.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\gthr-default.h \
+ c:\mingw\include\errno.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\mingw32\bits\atomic_word.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\string_conversions.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cstdio \
+ c:\mingw\include\stdio.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\cerrno \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\basic_string.tcc \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\memory \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_raw_storage_iter.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\typeinfo \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\concurrence.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uses_allocator.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\functional \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\tuple \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\array \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\stdexcept \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unique_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_base.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\allocated_ptr.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ext\aligned_buffer.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\shared_ptr_atomic.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\atomic_base.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\backward\auto_ptr.h \
+ C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h \
+ C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
+ C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
+ c:\mingw\include\windows.h c:\mingw\include\windef.h \
+ c:\mingw\include\winnt.h c:\mingw\include\winerror.h \
+ c:\mingw\include\string.h c:\mingw\include\basetsd.h \
+ c:\mingw\include\pshpack4.h c:\mingw\include\poppack.h \
+ c:\mingw\include\wincon.h c:\mingw\include\winbase.h \
+ c:\mingw\include\wingdi.h c:\mingw\include\winuser.h \
+ c:\mingw\include\dbt.h c:\mingw\include\winnls.h \
+ c:\mingw\include\winver.h c:\mingw\include\winnetwk.h \
+ c:\mingw\include\winreg.h c:\mingw\include\winsvc.h \
+ C:/MyGithub/The\ Lost\ Vault/include/KHR/khrplatform.h \
+ C:/MyGithub/The\ Lost\ Vault/src/graphics/Shader.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\unordered_map \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\hashtable_policy.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\unordered_map.h \
+ C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h \
+ C:/MyGithub/The\ Lost\ Vault/src/gameplay/CollisionSystem.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\ostream \
