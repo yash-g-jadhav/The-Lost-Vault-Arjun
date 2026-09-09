@@ -23,10 +23,9 @@ void Application::FramebufferSizeCallback(GLFWwindow* window, int width, int hei
 
 void Application::KeyCallback(GLFWwindow* window, int key, int scancode, int action, int mods) {
     (void)scancode; (void)mods;
-    (void)window;
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS) {
-        glfwSetWindowShouldClose(window, GLFW_TRUE);
-    }
+    // Escape handling is now delegated to InputManager / GameStateManager.
+    // Only handle OS-level close (Alt+F4, window X button) via glfwWindowShouldClose.
+    (void)window; (void)key; (void)action;
 }
 
 bool Application::Initialize(int w, int h, const char* title) {
@@ -111,6 +110,9 @@ void Application::Run() {
 
         accumulator += frameTime;
         glfwPollEvents();
+
+        // Snapshot input state once per frame (before any fixed updates)
+        game.PollInput(window);
 
         while (accumulator >= FIXED_DT) {
             game.Update(FIXED_DT);

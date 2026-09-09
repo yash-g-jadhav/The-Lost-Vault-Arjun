@@ -1,5 +1,7 @@
+#include <glad/glad.h>
 #include "core/Game.h"
 #include "core/Log.h"
+#include <GLFW/glfw3.h>
 #include <glm/gtc/matrix_transform.hpp>
 
 Game::Game() : isRunning(false) {}
@@ -18,13 +20,29 @@ bool Game::Initialize() {
         return false;
     }
 
+    // Load Level 1 data
+    currentLevel = LevelData::CreateDefaultLevel1();
+
+    // Place player at level start position
+    player.SetPosition(currentLevel.startPosition);
+
+    // Initialize camera position to player start position clamped by level bounds
+    camera.SetPosition(player.GetPosition(), currentLevel.bounds);
+
     isRunning = true;
     return true;
 }
 
+void Game::PollInput(GLFWwindow* window) {
+    inputManager.PollState(window);
+}
+
 void Game::Update(double fixedDt) {
-    (void)fixedDt;
-    // Game state / logic updates
+    // Movement input read every fixed update tick (60Hz)
+    player.HandleInput(inputManager, fixedDt);
+
+    // Camera follows player, clamped to level bounds
+    camera.Follow(player.GetPosition(), currentLevel.bounds, static_cast<float>(fixedDt));
 }
 
 void Game::Render() {
@@ -33,34 +51,25 @@ void Game::Render() {
     renderer.SetClearColor(skyColor);
     renderer.Clear();
 
-    // 16:9 world view coordinates for demonstration
-    glm::mat4 proj = glm::ortho(-8.0f, 8.0f, -4.5f, 4.5f, -1.0f, 1.0f);
-    renderer.BeginScene(proj);
+    // ── World-space pass with Camera2D ViewProjection matrix ──────────────
+    renderer.BeginScene(camera.GetViewProjectionMatrix());
 
-    // Demonstration primitives for Phase 2:
-    // Sand ground quad (#F0DCA0)
-    const glm::vec4 sandColor(240.0f / 255.0f, 220.0f / 255.0f, 160.0f / 255.0f, 1.0f);
-    renderer.DrawQuad(glm::vec2(0.0f, -3.0f), glm::vec2(16.0f, 3.0f), sandColor);
+    // Draw static level objects
+    for (const auto& obj : currentLevel.staticObjects) {
+        if (obj.type == "sun" || obj.type == "foliage" || obj.type == "circle") {
+            renderer.DrawCircle(obj.position, obj.scale.x * 0.5f, obj.color);
+        } else if (obj.type == "tree") {
+            // Draw tree trunk and foliage overlay
+            renderer.DrawQuad(obj.position, obj.scale, obj.color);
+            glm::vec4 foliageColor(61.0f / 255.0f, 122.0f / 255.0f, 61.0f / 255.0f, 1.0f);
+            renderer.DrawCircle(obj.position + glm::vec2(0.0f, obj.scale.y * 0.75f), obj.scale.y * 0.6f, foliageColor);
+        } else {
+            renderer.DrawQuad(obj.position, obj.scale, obj.color);
+        }
+    }
 
-    // Grass island quad (#5BA65B)
-    const glm::vec4 grassColor(91.0f / 255.0f, 166.0f / 255.0f, 91.0f / 255.0f, 1.0f);
-    renderer.DrawQuad(glm::vec2(0.0f, -1.5f), glm::vec2(10.0f, 1.0f), grassColor);
-
-    // Sun circle (#FFF3B0)
-    const glm::vec4 sunColor(255.0f / 255.0f, 243.0f / 255.0f, 176.0f / 255.0f, 1.0f);
-    renderer.DrawCircle(glm::vec2(5.5f, 3.0f), 1.0f, sunColor);
-
-    // Red gem circle (#E63946)
-    const glm::vec4 gemColor(230.0f / 255.0f, 57.0f / 255.0f, 70.0f / 255.0f, 1.0f);
-    renderer.DrawCircle(glm::vec2(-2.0f, 0.0f), 0.5f, gemColor);
-
-    // Tree trunk quad (#7A5230)
-    const glm::vec4 trunkColor(122.0f / 255.0f, 82.0f / 255.0f, 48.0f / 255.0f, 1.0f);
-    renderer.DrawQuad(glm::vec2(2.0f, 0.0f), glm::vec2(0.6f, 2.0f), trunkColor);
-
-    // Tree foliage circle (#3D7A3D)
-    const glm::vec4 foliageColor(61.0f / 255.0f, 122.0f / 255.0f, 61.0f / 255.0f, 1.0f);
-    renderer.DrawCircle(glm::vec2(2.0f, 1.5f), 1.2f, foliageColor);
+    // Player (hierarchical body parts)
+    player.Render(renderer);
 
     renderer.EndScene();
 }

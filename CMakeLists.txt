@@ -37,6 +37,12 @@ set(CORE_SOURCES
     src/graphics/Shader.cpp
     src/graphics/PrimitiveFactory.cpp
     src/graphics/Renderer2D.cpp
+    src/graphics/Camera2D.cpp
+    src/input/InputManager.cpp
+    src/entities/TransformComponent.cpp
+    src/entities/GameObject.cpp
+    src/entities/Player.cpp
+    src/levels/LevelData.cpp
 )
 
 set(CORE_HEADERS
@@ -51,6 +57,13 @@ set(CORE_HEADERS
     src/graphics/Shader.h
     src/graphics/PrimitiveFactory.h
     src/graphics/Renderer2D.h
+    src/graphics/Camera2D.h
+    src/input/InputManager.h
+    src/entities/Component.h
+    src/entities/TransformComponent.h
+    src/entities/GameObject.h
+    src/entities/Player.h
+    src/levels/LevelData.h
 )
 
 add_library(TheLostVaultCore STATIC ${CORE_SOURCES} ${CORE_HEADERS})

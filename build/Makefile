@@ -276,6 +276,78 @@ src/core/Log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.s
 .PHONY : src/core/Log.cpp.s
 
+src/entities/GameObject.obj: src/entities/GameObject.cpp.obj
+.PHONY : src/entities/GameObject.obj
+
+# target to build an object file
+src/entities/GameObject.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/GameObject.cpp.obj
+.PHONY : src/entities/GameObject.cpp.obj
+
+src/entities/GameObject.i: src/entities/GameObject.cpp.i
+.PHONY : src/entities/GameObject.i
+
+# target to preprocess a source file
+src/entities/GameObject.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/GameObject.cpp.i
+.PHONY : src/entities/GameObject.cpp.i
+
+src/entities/GameObject.s: src/entities/GameObject.cpp.s
+.PHONY : src/entities/GameObject.s
+
+# target to generate assembly for a file
+src/entities/GameObject.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/GameObject.cpp.s
+.PHONY : src/entities/GameObject.cpp.s
+
+src/entities/Player.obj: src/entities/Player.cpp.obj
+.PHONY : src/entities/Player.obj
+
+# target to build an object file
+src/entities/Player.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.obj
+.PHONY : src/entities/Player.cpp.obj
+
+src/entities/Player.i: src/entities/Player.cpp.i
+.PHONY : src/entities/Player.i
+
+# target to preprocess a source file
+src/entities/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.i
+.PHONY : src/entities/Player.cpp.i
+
+src/entities/Player.s: src/entities/Player.cpp.s
+.PHONY : src/entities/Player.s
+
+# target to generate assembly for a file
+src/entities/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.s
+.PHONY : src/entities/Player.cpp.s
+
+src/entities/TransformComponent.obj: src/entities/TransformComponent.cpp.obj
+.PHONY : src/entities/TransformComponent.obj
+
+# target to build an object file
+src/entities/TransformComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj
+.PHONY : src/entities/TransformComponent.cpp.obj
+
+src/entities/TransformComponent.i: src/entities/TransformComponent.cpp.i
+.PHONY : src/entities/TransformComponent.i
+
+# target to preprocess a source file
+src/entities/TransformComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.i
+.PHONY : src/entities/TransformComponent.cpp.i
+
+src/entities/TransformComponent.s: src/entities/TransformComponent.cpp.s
+.PHONY : src/entities/TransformComponent.s
+
+# target to generate assembly for a file
+src/entities/TransformComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.s
+.PHONY : src/entities/TransformComponent.cpp.s
+
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
 
@@ -299,6 +371,30 @@ src/glad.s: src/glad.c.s
 src/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/glad.c.s
 .PHONY : src/glad.c.s
+
+src/graphics/Camera2D.obj: src/graphics/Camera2D.cpp.obj
+.PHONY : src/graphics/Camera2D.obj
+
+# target to build an object file
+src/graphics/Camera2D.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.obj
+.PHONY : src/graphics/Camera2D.cpp.obj
+
+src/graphics/Camera2D.i: src/graphics/Camera2D.cpp.i
+.PHONY : src/graphics/Camera2D.i
+
+# target to preprocess a source file
+src/graphics/Camera2D.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.i
+.PHONY : src/graphics/Camera2D.cpp.i
+
+src/graphics/Camera2D.s: src/graphics/Camera2D.cpp.s
+.PHONY : src/graphics/Camera2D.s
+
+# target to generate assembly for a file
+src/graphics/Camera2D.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Camera2D.cpp.s
+.PHONY : src/graphics/Camera2D.cpp.s
 
 src/graphics/PrimitiveFactory.obj: src/graphics/PrimitiveFactory.cpp.obj
 .PHONY : src/graphics/PrimitiveFactory.obj
@@ -372,6 +468,54 @@ src/graphics/Shader.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/graphics/Shader.cpp.s
 .PHONY : src/graphics/Shader.cpp.s
 
+src/input/InputManager.obj: src/input/InputManager.cpp.obj
+.PHONY : src/input/InputManager.obj
+
+# target to build an object file
+src/input/InputManager.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/input/InputManager.cpp.obj
+.PHONY : src/input/InputManager.cpp.obj
+
+src/input/InputManager.i: src/input/InputManager.cpp.i
+.PHONY : src/input/InputManager.i
+
+# target to preprocess a source file
+src/input/InputManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/input/InputManager.cpp.i
+.PHONY : src/input/InputManager.cpp.i
+
+src/input/InputManager.s: src/input/InputManager.cpp.s
+.PHONY : src/input/InputManager.s
+
+# target to generate assembly for a file
+src/input/InputManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/input/InputManager.cpp.s
+.PHONY : src/input/InputManager.cpp.s
+
+src/levels/LevelData.obj: src/levels/LevelData.cpp.obj
+.PHONY : src/levels/LevelData.obj
+
+# target to build an object file
+src/levels/LevelData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj
+.PHONY : src/levels/LevelData.cpp.obj
+
+src/levels/LevelData.i: src/levels/LevelData.cpp.i
+.PHONY : src/levels/LevelData.i
+
+# target to preprocess a source file
+src/levels/LevelData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.i
+.PHONY : src/levels/LevelData.cpp.i
+
+src/levels/LevelData.s: src/levels/LevelData.cpp.s
+.PHONY : src/levels/LevelData.s
+
+# target to generate assembly for a file
+src/levels/LevelData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.s
+.PHONY : src/levels/LevelData.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -421,9 +565,21 @@ help:
 	@echo ... src/core/Log.obj
 	@echo ... src/core/Log.i
 	@echo ... src/core/Log.s
+	@echo ... src/entities/GameObject.obj
+	@echo ... src/entities/GameObject.i
+	@echo ... src/entities/GameObject.s
+	@echo ... src/entities/Player.obj
+	@echo ... src/entities/Player.i
+	@echo ... src/entities/Player.s
+	@echo ... src/entities/TransformComponent.obj
+	@echo ... src/entities/TransformComponent.i
+	@echo ... src/entities/TransformComponent.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
+	@echo ... src/graphics/Camera2D.obj
+	@echo ... src/graphics/Camera2D.i
+	@echo ... src/graphics/Camera2D.s
 	@echo ... src/graphics/PrimitiveFactory.obj
 	@echo ... src/graphics/PrimitiveFactory.i
 	@echo ... src/graphics/PrimitiveFactory.s
@@ -433,6 +589,12 @@ help:
 	@echo ... src/graphics/Shader.obj
 	@echo ... src/graphics/Shader.i
 	@echo ... src/graphics/Shader.s
+	@echo ... src/input/InputManager.obj
+	@echo ... src/input/InputManager.i
+	@echo ... src/input/InputManager.s
+	@echo ... src/levels/LevelData.obj
+	@echo ... src/levels/LevelData.i
+	@echo ... src/levels/LevelData.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

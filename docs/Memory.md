@@ -181,15 +181,16 @@ Or run the test binary directly: `./build/TheLostVaultTests`. See `Architecture.
 
 > **Update this section at the end of every implementation session.**
 
-- **Current phase:** Phase 2 — Rendering Primitives (Completed)
-- **Last completed task:** Phase 2 — Implemented `graphics/Shader` (file-loading + embedded-source fallback, compile/link, cached uniform helpers), `graphics/PrimitiveFactory` (unit quad VAO/VBO/EBO and triangle-fan circle mesh), `graphics/Renderer2D` (batched `DrawQuad` + CPU-side fan `DrawCircle` both pushing into a single `BatchVertex` VBO/EBO via `BeginScene`/`Flush`/`EndScene`; batch auto-flushes at 10 000 vertex capacity), and `assets/shaders/primitive.vert/.frag` (vertex color attribute `a_Color` at location 2 → `v_Color` varying, used in fragment stage). `Game::Render()` demonstrates sky quad, sand quad, grass quad, two circles (sun, gem), and a tree trunk+foliage quad rendered via the new renderer.
-- **Current task:** Phase 2 — Rendering Primitives (Complete).
-- **Next recommended task:** Phase 3 — Player: Implement `input/InputManager` (Action enum + GLFW polling), `entities/GameObject`, `entities/TransformComponent`, `entities/Player` with hierarchical rendering (body root + limb child transforms) and WASD/arrow movement per Rules.md §1 (8-directional, normalized diagonal speed).
+- **Current phase:** Phase 4 — Camera and World (Completed)
+- **Last completed task:** Phase 4 — Camera and World: Implemented `graphics/Camera2D` (smooth target follow with exponential lerp, orthographic view-projection matrix, level bounds clamping per Rules.md R19.2), `levels/LevelData` (data struct for level bounds, start position, gems required, static object manifest), `assets/levels/level1.lvl` asset, and integrated `Camera2D` + `LevelData` into `Game::Initialize()`, `Game::Update()`, and `Game::Render()`.
+- **Current task:** Phase 4 — Camera and World (Complete).
+- **Next recommended task:** Phase 5 — Collision: Implement `utils/AABB.h`, `entities/ColliderComponent`, `gameplay/CollisionSystem` (axis-separated resolution per Architecture.md §12 / Rules.md §2), mark static Level 1 obstacles (trees, rocks) solid, and write unit test for AABB intersection.
 - **Build status:** Clean build — `cmake --build build --config Debug` exits with code 0, zero errors, zero warnings. Executable: `build/Debug/TheLostVault.exe`.
-- **Test status:** Manual visual check — screen shows sky-blue background with sand, grass, tree (trunk+foliage), sun and gem circles. No crashes on launch or exit.
+- **Test status:** Verified build — `TheLostVaultCore` static library and `TheLostVault.exe` build cleanly and post-build step copies `assets/` to output directory.
 - **Known issues:** None.
-- **Known limitations:** `circleMesh` and `quadMesh` fields in `Renderer2D` are initialized but no longer used for draw calls (both paths now batch through `m_BatchVBO`). They're kept to avoid an unapproved restructure; they can be removed in a future cleanup pass.
+- **Known limitations:** `circleMesh` and `quadMesh` fields in `Renderer2D` are initialized but no longer used for draw calls (both paths batch through `m_BatchVBO`). Kept to avoid unapproved restructure.
 - **Recent architectural decisions:**
-  - `DrawCircle` moved fully onto the batch path (CPU triangle-fan expansion into `BatchVertex` buffer) so that the single VAO/shader covers both quads and circles without a separate VAO that would lack the `a_Color` attribute at location 2.
-  - Fragment shader dropped the `u_Color` uniform; color is now carried entirely per-vertex via `v_Color`.
-  - `DrawQuad` applies the full 4×4 transform to each local vertex on the CPU before batching (world-space positions in the vertex buffer), so `u_MVP` in `Flush` carries the pure view-projection matrix — this is the standard batch-renderer pattern.
+  - `Camera2D` clamps position against `LevelData::bounds` using `glm::clamp`, centering the view if the level dimension is smaller than the viewport.
+  - `InputManager.h` forward declares `struct GLFWwindow` and includes `glad/glad.h` before `GLFW/glfw3.h` in `.cpp` files to eliminate OpenGL header redefinition errors on Windows/MinGW.
+  - `Player` color constants defined as `static const glm::vec4` in `Player.h` with definitions in `Player.cpp` for ODR compliance across MinGW/GCC compilers.
+  - `LevelData::CreateDefaultLevel1()` provides a robust fallback level specification matching `Design.md` §5.1.

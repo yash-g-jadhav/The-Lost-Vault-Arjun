@@ -14,6 +14,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/detail/type_half.inl
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/fwd.hpp
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/glm.hpp
+ C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/gtc/matrix_transform.hpp
+ C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/gtc/matrix_transform.inl
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/integer.hpp
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/mat2x2.hpp
  C:/MyGithub/The Lost Vault/build/_deps/glm-src/glm/packing.hpp
@@ -25,9 +27,15 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  C:/MyGithub/The Lost Vault/include/glad/glad.h
  C:/MyGithub/The Lost Vault/src/core/Clock.h
  C:/MyGithub/The Lost Vault/src/core/Game.h
+ C:/MyGithub/The Lost Vault/src/entities/GameObject.h
+ C:/MyGithub/The Lost Vault/src/entities/Player.h
+ C:/MyGithub/The Lost Vault/src/entities/TransformComponent.h
+ C:/MyGithub/The Lost Vault/src/graphics/Camera2D.h
  C:/MyGithub/The Lost Vault/src/graphics/PrimitiveFactory.h
  C:/MyGithub/The Lost Vault/src/graphics/Renderer2D.h
  C:/MyGithub/The Lost Vault/src/graphics/Shader.h
+ C:/MyGithub/The Lost Vault/src/input/InputManager.h
+ C:/MyGithub/The Lost Vault/src/levels/LevelData.h
  C:/MyGithub/The Lost Vault/src/core/Application.h
  C:/MyGithub/The Lost Vault/src/core/Log.h
  c:/mingw/include/_mingw.h
@@ -228,6 +236,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/detail/type_vec4.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/detail/type_vec4.inl
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/exponential.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_clip_space.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_clip_space.inl
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_double2x2.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_double2x2_precision.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_double2x3.hpp
@@ -264,6 +274,12 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_float4x3_precision.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_float4x4.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_float4x4_precision.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_projection.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_projection.inl
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_transform.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/matrix_transform.inl
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/scalar_constants.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/scalar_constants.inl
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/scalar_int_sized.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/scalar_uint_sized.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/vector_bool2.hpp
@@ -297,6 +313,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/vector_uint4.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/ext/vector_uint4_sized.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/geometric.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/gtc/constants.hpp
+ c:/mygithub/the lost vault/build/_deps/glm-src/glm/gtc/constants.inl
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/mat2x3.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/mat2x4.hpp
  c:/mygithub/the lost vault/build/_deps/glm-src/glm/mat3x2.hpp

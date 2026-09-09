@@ -271,6 +271,24 @@ CMakeFiles/TheLostVaultCore.dir/src/core/Application.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_vector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_bvector.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\vector.tcc \
+ C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h \
+ C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h \
+ C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h \
+ C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h \
+ C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_projection.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\gtc\constants.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\scalar_constants.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\scalar_constants.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\gtc\constants.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_projection.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_clip_space.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_clip_space.inl \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.hpp \
+ c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.inl \
+ C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.inl \
+ C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \

@@ -13,6 +13,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   _deps/glm-src/glm/detail/type_half.inl \
   _deps/glm-src/glm/fwd.hpp \
   _deps/glm-src/glm/glm.hpp \
+  _deps/glm-src/glm/gtc/matrix_transform.hpp \
+  _deps/glm-src/glm/gtc/matrix_transform.inl \
   _deps/glm-src/glm/integer.hpp \
   _deps/glm-src/glm/mat2x2.hpp \
   _deps/glm-src/glm/packing.hpp \
@@ -24,9 +26,15 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
+  C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h \
+  C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h \
+  C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h \
+  C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h \
   C:/MyGithub/The\ Lost\ Vault/src/graphics/Shader.h \
+  C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h \
+  C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Application.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
   c:/mingw/include/_mingw.h \
@@ -227,6 +235,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   _deps/glm-src/glm/detail/type_vec4.hpp \
   _deps/glm-src/glm/detail/type_vec4.inl \
   _deps/glm-src/glm/exponential.hpp \
+  _deps/glm-src/glm/ext/matrix_clip_space.hpp \
+  _deps/glm-src/glm/ext/matrix_clip_space.inl \
   _deps/glm-src/glm/ext/matrix_double2x2.hpp \
   _deps/glm-src/glm/ext/matrix_double2x2_precision.hpp \
   _deps/glm-src/glm/ext/matrix_double2x3.hpp \
@@ -263,6 +273,12 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   _deps/glm-src/glm/ext/matrix_float4x3_precision.hpp \
   _deps/glm-src/glm/ext/matrix_float4x4.hpp \
   _deps/glm-src/glm/ext/matrix_float4x4_precision.hpp \
+  _deps/glm-src/glm/ext/matrix_projection.hpp \
+  _deps/glm-src/glm/ext/matrix_projection.inl \
+  _deps/glm-src/glm/ext/matrix_transform.hpp \
+  _deps/glm-src/glm/ext/matrix_transform.inl \
+  _deps/glm-src/glm/ext/scalar_constants.hpp \
+  _deps/glm-src/glm/ext/scalar_constants.inl \
   _deps/glm-src/glm/ext/scalar_int_sized.hpp \
   _deps/glm-src/glm/ext/scalar_uint_sized.hpp \
   _deps/glm-src/glm/ext/vector_bool2.hpp \
@@ -296,6 +312,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   _deps/glm-src/glm/ext/vector_uint4.hpp \
   _deps/glm-src/glm/ext/vector_uint4_sized.hpp \
   _deps/glm-src/glm/geometric.hpp \
+  _deps/glm-src/glm/gtc/constants.hpp \
+  _deps/glm-src/glm/gtc/constants.inl \
   _deps/glm-src/glm/mat2x3.hpp \
   _deps/glm-src/glm/mat2x4.hpp \
   _deps/glm-src/glm/mat3x2.hpp \
@@ -351,6 +369,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cwchar:
 
 _deps/glm-src/glm/detail/setup.hpp:
 
+C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h:
+
 c:/mingw/include/_mingw.h:
 
 _deps/glm-src/glm/detail/type_half.hpp:
@@ -362,6 +382,14 @@ c:/mingw/include/float.h:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h:
 
 _deps/glm-src/glm/detail/type_half.inl:
+
+_deps/glm-src/glm/gtc/matrix_transform.hpp:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/vector:
+
+C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h:
+
+_deps/glm-src/glm/gtc/matrix_transform.inl:
 
 _deps/glm-src/glm/integer.hpp:
 
@@ -389,12 +417,6 @@ c:/mingw/include/limits.h:
 
 _deps/glm-src/glm/vec4.hpp:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/utility:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_inline.h:
-
-c:/mingw/include/winreg.h:
-
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_base.h:
 
 c:/mingw/include/poppack.h:
@@ -403,11 +425,21 @@ c:/mingw/include/w32api.h:
 
 C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/vector:
-
-C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h:
-
 C:/MyGithub/The\ Lost\ Vault/src/core/Game.h:
+
+_deps/glm-src/glm/matrix.hpp:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
+
+c:/mingw/include/pshpack4.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/graphics/PrimitiveFactory.h:
 
@@ -419,6 +451,12 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/graphics/Renderer2D.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/concurrence.h:
+
+c:/mingw/include/string.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h:
+
 c:/mingw/include/assert.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/system_error:
@@ -428,8 +466,6 @@ c:/mingw/include/stdint.h:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/type_traits.h:
 
 c:/mingw/include/basetsd.h:
-
-c:/mingw/include/winnetwk.h:
 
 c:/mingw/include/ctype.h:
 
@@ -443,27 +479,11 @@ c:/mingw/include/math.h:
 
 c:/mingw/include/locale.h:
 
-c:/mingw/include/winsvc.h:
-
-c:/mingw/include/wingdi.h:
-
 c:/mingw/include/msvcrtver.h:
-
-_deps/glm-src/glm/matrix.hpp:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
-
-c:/mingw/include/pshpack4.h:
 
 c:/mingw/include/sdkddkver.h:
 
 c:/mingw/include/stdio.h:
-
-c:/mingw/include/winnls.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/concurrence.h:
-
-c:/mingw/include/string.h:
 
 c:/mingw/include/sys/types.h:
 
@@ -481,7 +501,21 @@ c:/mingw/include/wincon.h:
 
 c:/mingw/include/windef.h:
 
+c:/mingw/include/wingdi.h:
+
+c:/mingw/include/winnetwk.h:
+
+c:/mingw/include/winnls.h:
+
 c:/mingw/include/winnt.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/utility:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/mingw32/bits/ctype_inline.h:
+
+c:/mingw/include/winreg.h:
+
+c:/mingw/include/winsvc.h:
 
 c:/mingw/include/winuser.h:
 
@@ -529,6 +563,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/char_traits.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/concept_check.h:
 
+_deps/glm-src/glm/ext/matrix_transform.hpp:
+
 _deps/glm-src/glm/ext/matrix_float2x4.hpp:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/exception:
@@ -544,6 +580,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_defines.h:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/exception_ptr.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functexcept.h:
+
+_deps/glm-src/glm/ext/matrix_projection.inl:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/functional_hash.h:
 
@@ -605,6 +643,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_pair.h:
 
+_deps/glm-src/glm/ext/matrix_projection.hpp:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_relops.h:
 
 _deps/glm-src/glm/ext/matrix_float2x4_precision.hpp:
@@ -648,6 +688,8 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cctype:
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/cerrno:
 
 _deps/glm-src/glm/ext/vector_bool2.hpp:
+
+_deps/glm-src/glm/ext/scalar_constants.hpp:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ios:
 
@@ -815,6 +857,12 @@ _deps/glm-src/glm/detail/type_vec4.inl:
 
 _deps/glm-src/glm/exponential.hpp:
 
+_deps/glm-src/glm/ext/matrix_clip_space.hpp:
+
+_deps/glm-src/glm/ext/vector_float2.hpp:
+
+_deps/glm-src/glm/ext/matrix_clip_space.inl:
+
 _deps/glm-src/glm/ext/matrix_double2x2.hpp:
 
 _deps/glm-src/glm/ext/matrix_double2x3.hpp:
@@ -834,6 +882,8 @@ _deps/glm-src/glm/ext/matrix_double3x3_precision.hpp:
 _deps/glm-src/glm/ext/matrix_double3x4.hpp:
 
 _deps/glm-src/glm/ext/vector_double4.hpp:
+
+_deps/glm-src/glm/ext/matrix_transform.inl:
 
 _deps/glm-src/glm/ext/matrix_double4x2.hpp:
 
@@ -873,6 +923,10 @@ _deps/glm-src/glm/ext/vector_double3_precision.hpp:
 
 _deps/glm-src/glm/ext/matrix_float4x2_precision.hpp:
 
+_deps/glm-src/glm/ext/scalar_constants.inl:
+
+_deps/glm-src/glm/gtc/constants.hpp:
+
 _deps/glm-src/glm/ext/scalar_int_sized.hpp:
 
 _deps/glm-src/glm/ext/scalar_uint_sized.hpp:
@@ -884,8 +938,6 @@ _deps/glm-src/glm/ext/vector_bool3.hpp:
 _deps/glm-src/glm/ext/vector_bool4.hpp:
 
 _deps/glm-src/glm/ext/vector_bool4_precision.hpp:
-
-_deps/glm-src/glm/ext/vector_float2.hpp:
 
 _deps/glm-src/glm/ext/vector_float3_precision.hpp:
 
@@ -902,6 +954,8 @@ _deps/glm-src/glm/ext/vector_uint2.hpp:
 _deps/glm-src/glm/ext/vector_uint3.hpp:
 
 _deps/glm-src/glm/ext/vector_uint4.hpp:
+
+_deps/glm-src/glm/gtc/constants.inl:
 
 _deps/glm-src/glm/mat2x3.hpp:
 
