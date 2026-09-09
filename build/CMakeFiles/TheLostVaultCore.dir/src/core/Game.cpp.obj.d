@@ -285,6 +285,14 @@ CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj: \
  c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.hpp \
  c:\mygithub\the\ lost\ vault\build\_deps\glm-src\glm\ext\matrix_transform.inl \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glm-src/glm/gtc/matrix_transform.inl \
+ C:/MyGithub/The\ Lost\ Vault/src/entities/ColliderComponent.h \
+ C:/MyGithub/The\ Lost\ Vault/src/entities/Component.h \
+ C:/MyGithub/The\ Lost\ Vault/src/utils/AABB.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\algorithm \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_algo.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\algorithmfwd.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\stl_heap.h \
+ c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\uniform_int_dist.h \
  C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h \
  C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\iostream \
@@ -311,4 +319,5 @@ CMakeFiles/TheLostVaultCore.dir/src/core/Game.cpp.obj: \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\istream.tcc \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\sstream \
  c:\mingw\lib\gcc\mingw32\6.3.0\include\c++\bits\sstream.tcc \
+ C:/MyGithub/The\ Lost\ Vault/src/gameplay/CollisionSystem.h \
  C:/MyGithub/The\ Lost\ Vault/build/_deps/glfw-src/include/GLFW/glfw3.h

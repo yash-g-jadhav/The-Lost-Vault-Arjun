@@ -38,6 +38,9 @@ Player::Player() : GameObject("Player") {
 
     // Body root scale (the torso rect)
     transform.scale = {0.45f, 0.55f};
+
+    // Initialize player collider (AABB size 0.6 x 1.2 -> halfExtents 0.3 x 0.6)
+    collider = std::make_unique<ColliderComponent>(glm::vec2(0.3f, 0.6f), false);
 }
 
 // ─── Update forwarding ────────────────────────────────────────────────────────

@@ -26,6 +26,8 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Clock.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Game.h \
+  C:/MyGithub/The\ Lost\ Vault/src/entities/ColliderComponent.h \
+  C:/MyGithub/The\ Lost\ Vault/src/entities/Component.h \
   C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h \
   C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h \
   C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h \
@@ -35,6 +37,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   C:/MyGithub/The\ Lost\ Vault/src/graphics/Shader.h \
   C:/MyGithub/The\ Lost\ Vault/src/input/InputManager.h \
   C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.h \
+  C:/MyGithub/The\ Lost\ Vault/src/utils/AABB.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Application.h \
   C:/MyGithub/The\ Lost\ Vault/src/core/Log.h \
   c:/mingw/include/_mingw.h \
@@ -73,9 +76,11 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   c:/mingw/include/winsvc.h \
   c:/mingw/include/winuser.h \
   c:/mingw/include/winver.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/algorithm \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/auto_ptr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/alloc_traits.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/allocated_ptr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/allocator.h \
@@ -116,10 +121,12 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_bvector.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_construct.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_function.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_funcs.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator_base_types.h \
@@ -132,6 +139,7 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf.tcc \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h \
+  c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unique_ptr.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/unordered_map.h \
   c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uses_allocator.h \
@@ -327,6 +335,14 @@ CMakeFiles/TheLostVault.dir/src/main.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/m
   _deps/glm-src/glm/vector_relational.hpp
 
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/utils/AABB.h:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_base.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/main.cpp:
@@ -397,10 +413,6 @@ C:/MyGithub/The\ Lost\ Vault/src/core/Log.h:
 
 _deps/glm-src/glm/mat2x2.hpp:
 
-_deps/glm-src/glm/ext/vector_float3.hpp:
-
-c:/mingw/include/winerror.h:
-
 _deps/glm-src/glm/packing.hpp:
 
 _deps/glm-src/glm/trigonometric.hpp:
@@ -427,6 +439,14 @@ C:/MyGithub/The\ Lost\ Vault/include/glad/glad.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/core/Game.h:
 
+C:/MyGithub/The\ Lost\ Vault/src/entities/ColliderComponent.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h:
+
+c:/mingw/include/msvcrtver.h:
+
+C:/MyGithub/The\ Lost\ Vault/src/entities/Component.h:
+
 _deps/glm-src/glm/matrix.hpp:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_tempbuf.h:
@@ -436,8 +456,6 @@ c:/mingw/include/pshpack4.h:
 C:/MyGithub/The\ Lost\ Vault/src/entities/GameObject.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/entities/Player.h:
-
-C:/MyGithub/The\ Lost\ Vault/src/entities/TransformComponent.h:
 
 C:/MyGithub/The\ Lost\ Vault/src/graphics/Camera2D.h:
 
@@ -479,8 +497,6 @@ c:/mingw/include/math.h:
 
 c:/mingw/include/locale.h:
 
-c:/mingw/include/msvcrtver.h:
-
 c:/mingw/include/sdkddkver.h:
 
 c:/mingw/include/stdio.h:
@@ -491,8 +507,6 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/streambuf:
 
 c:/mingw/include/time.h:
 
-c:/mingw/include/windows.h:
-
 c:/mingw/include/wchar.h:
 
 c:/mingw/include/winbase.h:
@@ -500,6 +514,12 @@ c:/mingw/include/winbase.h:
 c:/mingw/include/wincon.h:
 
 c:/mingw/include/windef.h:
+
+c:/mingw/include/windows.h:
+
+_deps/glm-src/glm/ext/vector_float3.hpp:
+
+c:/mingw/include/winerror.h:
 
 c:/mingw/include/wingdi.h:
 
@@ -521,11 +541,19 @@ c:/mingw/include/winuser.h:
 
 c:/mingw/include/winver.h:
 
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/unordered_map:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/algorithm:
+
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/array:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/auto_ptr.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/backward/binders.h:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/algorithmfwd.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/locale_classes.tcc:
 
@@ -623,15 +651,13 @@ c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/ptr_traits.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/range_access.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/ext/string_conversions.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algobase.h:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_heap.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/shared_ptr_atomic.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/sstream.tcc:
+
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_algo.h:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stl_iterator.h:
 
@@ -661,9 +687,7 @@ _deps/glm-src/glm/detail/type_mat4x4.inl:
 
 c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/streambuf_iterator.h:
 
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/unordered_map:
-
-c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/stringfwd.h:
+c:/mingw/lib/gcc/mingw32/6.3.0/include/c++/bits/uniform_int_dist.h:
 
 _deps/glm-src/glm/ext/vector_uint2_sized.hpp:
 

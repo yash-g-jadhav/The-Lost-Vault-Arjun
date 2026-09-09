@@ -64,6 +64,7 @@ CMAKE_BINARY_DIR = "C:\MyGithub\The Lost Vault\build"
 # The main recursive "all" target.
 all: CMakeFiles/TheLostVaultCore.dir/all
 all: CMakeFiles/TheLostVault.dir/all
+all: CMakeFiles/TheLostVaultTests.dir/all
 all: _deps/glfw-build/all
 all: _deps/glm-build/all
 .PHONY : all
@@ -71,6 +72,7 @@ all: _deps/glm-build/all
 # The main recursive "codegen" target.
 codegen: CMakeFiles/TheLostVaultCore.dir/codegen
 codegen: CMakeFiles/TheLostVault.dir/codegen
+codegen: CMakeFiles/TheLostVaultTests.dir/codegen
 codegen: _deps/glfw-build/codegen
 codegen: _deps/glm-build/codegen
 .PHONY : codegen
@@ -83,6 +85,7 @@ preinstall: _deps/glm-build/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/TheLostVaultCore.dir/clean
 clean: CMakeFiles/TheLostVault.dir/clean
+clean: CMakeFiles/TheLostVaultTests.dir/clean
 clean: _deps/glfw-build/clean
 clean: _deps/glm-build/clean
 .PHONY : clean
@@ -168,16 +171,16 @@ _deps/glm-build/glm/clean: _deps/glm-build/glm/CMakeFiles/glm.dir/clean
 # Target rules for target CMakeFiles/TheLostVaultCore.dir
 
 # All Build rule for target.
-CMakeFiles/TheLostVaultCore.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
 CMakeFiles/TheLostVaultCore.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/TheLostVaultCore.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Built target TheLostVaultCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Built target TheLostVaultCore"
 .PHONY : CMakeFiles/TheLostVaultCore.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TheLostVaultCore.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 39
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 41
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TheLostVaultCore.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 0
 .PHONY : CMakeFiles/TheLostVaultCore.dir/rule
@@ -189,7 +192,7 @@ TheLostVaultCore: CMakeFiles/TheLostVaultCore.dir/rule
 # codegen rule for target.
 CMakeFiles/TheLostVaultCore.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17 "Finished codegen for target TheLostVaultCore"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19 "Finished codegen for target TheLostVaultCore"
 .PHONY : CMakeFiles/TheLostVaultCore.dir/codegen
 
 # clean rule for target.
@@ -202,8 +205,8 @@ CMakeFiles/TheLostVaultCore.dir/clean:
 
 # All Build rule for target.
 CMakeFiles/TheLostVault.dir/all: CMakeFiles/TheLostVaultCore.dir/all
-CMakeFiles/TheLostVault.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
 CMakeFiles/TheLostVault.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/TheLostVault.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVault.dir\build.make CMakeFiles/TheLostVault.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVault.dir\build.make CMakeFiles/TheLostVault.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=1,2 "Built target TheLostVault"
@@ -211,7 +214,7 @@ CMakeFiles/TheLostVault.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/TheLostVault.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 41
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 43
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TheLostVault.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 0
 .PHONY : CMakeFiles/TheLostVault.dir/rule
@@ -232,13 +235,47 @@ CMakeFiles/TheLostVault.dir/clean:
 .PHONY : CMakeFiles/TheLostVault.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/TheLostVaultTests.dir
+
+# All Build rule for target.
+CMakeFiles/TheLostVaultTests.dir/all: CMakeFiles/TheLostVaultCore.dir/all
+CMakeFiles/TheLostVaultTests.dir/all: _deps/glfw-build/src/CMakeFiles/glfw.dir/all
+CMakeFiles/TheLostVaultTests.dir/all: _deps/glm-build/glm/CMakeFiles/glm.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=20,21 "Built target TheLostVaultTests"
+.PHONY : CMakeFiles/TheLostVaultTests.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/TheLostVaultTests.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 43
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/TheLostVaultTests.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\MyGithub\The Lost Vault\build\CMakeFiles" 0
+.PHONY : CMakeFiles/TheLostVaultTests.dir/rule
+
+# Convenience name for target.
+TheLostVaultTests: CMakeFiles/TheLostVaultTests.dir/rule
+.PHONY : TheLostVaultTests
+
+# codegen rule for target.
+CMakeFiles/TheLostVaultTests.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=20,21 "Finished codegen for target TheLostVaultTests"
+.PHONY : CMakeFiles/TheLostVaultTests.dir/codegen
+
+# clean rule for target.
+CMakeFiles/TheLostVaultTests.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/clean
+.PHONY : CMakeFiles/TheLostVaultTests.dir/clean
+
+#=============================================================================
 # Target rules for target _deps/glfw-build/src/CMakeFiles/glfw.dir
 
 # All Build rule for target.
 _deps/glfw-build/src/CMakeFiles/glfw.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Built target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Built target glfw"
 .PHONY : _deps/glfw-build/src/CMakeFiles/glfw.dir/all
 
 # Build rule for subdir invocation for target.
@@ -255,7 +292,7 @@ glfw: _deps/glfw-build/src/CMakeFiles/glfw.dir/rule
 # codegen rule for target.
 _deps/glfw-build/src/CMakeFiles/glfw.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\glfw.dir\build.make _deps/glfw-build/src/CMakeFiles/glfw.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39 "Finished codegen for target glfw"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43 "Finished codegen for target glfw"
 .PHONY : _deps/glfw-build/src/CMakeFiles/glfw.dir/codegen
 
 # clean rule for target.
@@ -270,7 +307,7 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/clean:
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=42 "Built target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=46 "Built target update_mappings"
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/all
 
 # Build rule for subdir invocation for target.
@@ -287,7 +324,7 @@ update_mappings: _deps/glfw-build/src/CMakeFiles/update_mappings.dir/rule
 # codegen rule for target.
 _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\glfw-build\src\CMakeFiles\update_mappings.dir\build.make _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=42 "Finished codegen for target update_mappings"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=46 "Finished codegen for target update_mappings"
 .PHONY : _deps/glfw-build/src/CMakeFiles/update_mappings.dir/codegen
 
 # clean rule for target.
@@ -302,7 +339,7 @@ _deps/glfw-build/src/CMakeFiles/update_mappings.dir/clean:
 _deps/glm-build/glm/CMakeFiles/glm.dir/all:
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/depend
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=40,41 "Built target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=44,45 "Built target glm"
 .PHONY : _deps/glm-build/glm/CMakeFiles/glm.dir/all
 
 # Build rule for subdir invocation for target.
@@ -319,7 +356,7 @@ glm: _deps/glm-build/glm/CMakeFiles/glm.dir/rule
 # codegen rule for target.
 _deps/glm-build/glm/CMakeFiles/glm.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f _deps\glm-build\glm\CMakeFiles\glm.dir\build.make _deps/glm-build/glm/CMakeFiles/glm.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=40,41 "Finished codegen for target glm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=44,45 "Finished codegen for target glm"
 .PHONY : _deps/glm-build/glm/CMakeFiles/glm.dir/codegen
 
 # clean rule for target.

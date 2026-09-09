@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = "C:\MyGithub\The Lost Vault\build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	C:\Users\yashj\AppData\Local\Programs\Python\Python310\Lib\site-packages\cmake\data\bin\ctest.exe $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -161,6 +171,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... glm
 	@echo ... detail/glm.obj
 	@echo ... detail/glm.i

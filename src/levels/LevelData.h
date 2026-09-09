@@ -3,6 +3,7 @@
 #include <string>
 #include <vector>
 #include <glm/glm.hpp>
+#include "utils/AABB.h"
 
 // Static object descriptor in level data
 struct StaticObjectData {
@@ -11,6 +12,7 @@ struct StaticObjectData {
     glm::vec2 scale;
     float rotation{0.0f};
     glm::vec4 color{1.0f};
+    bool isSolid{false};
 };
 
 // LevelData: plain data struct containing raw parsed level parameters
@@ -23,6 +25,8 @@ struct LevelData {
     int totalGems{4};
 
     std::vector<StaticObjectData> staticObjects;
+
+    std::vector<AABB> GetSolidObstacles() const;
 
     static LevelData CreateDefaultLevel1();
 };

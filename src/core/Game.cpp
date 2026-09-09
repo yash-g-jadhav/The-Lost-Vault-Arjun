@@ -1,6 +1,7 @@
 #include <glad/glad.h>
 #include "core/Game.h"
 #include "core/Log.h"
+#include "gameplay/CollisionSystem.h"
 #include <GLFW/glfw3.h>
 #include <glm/gtc/matrix_transform.hpp>
 
@@ -40,6 +41,9 @@ void Game::PollInput(GLFWwindow* window) {
 void Game::Update(double fixedDt) {
     // Movement input read every fixed update tick (60Hz)
     player.HandleInput(inputManager, fixedDt);
+
+    // Resolve solid obstacle collision & level bounds clamping
+    CollisionSystem::ResolvePlayerCollision(player, currentLevel.GetSolidObstacles(), currentLevel.bounds);
 
     // Camera follows player, clamped to level bounds
     camera.Follow(player.GetPosition(), currentLevel.bounds, static_cast<float>(fixedDt));

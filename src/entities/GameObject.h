@@ -1,11 +1,11 @@
 #pragma once
 
 #include "entities/TransformComponent.h"
+#include "entities/ColliderComponent.h"
 #include <string>
+#include <memory>
 
-// GameObject: base entity with a name and a TransformComponent.
-// Concrete component slots (sprite, collider, animator, interactable) will be
-// added in later phases as unique_ptr members here.
+// GameObject: base entity with a name, a TransformComponent, and optional component slots.
 class GameObject {
 public:
     explicit GameObject(std::string name = "GameObject");
@@ -16,6 +16,7 @@ public:
     const std::string& GetName() const { return name; }
 
     TransformComponent transform;
+    std::unique_ptr<ColliderComponent> collider;
 
 protected:
     std::string name;

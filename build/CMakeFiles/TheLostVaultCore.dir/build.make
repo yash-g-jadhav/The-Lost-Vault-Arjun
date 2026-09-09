@@ -266,11 +266,41 @@ CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.s"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\MyGithub\The Lost Vault\src\entities\Player.cpp" -o CMakeFiles\TheLostVaultCore.dir\src\entities\Player.cpp.s
 
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj: CMakeFiles/TheLostVaultCore.dir/flags.make
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj: CMakeFiles/TheLostVaultCore.dir/includes_CXX.rsp
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/entities/ColliderComponent.cpp
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj: CMakeFiles/TheLostVaultCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj -MF CMakeFiles\TheLostVaultCore.dir\src\entities\ColliderComponent.cpp.obj.d -o CMakeFiles\TheLostVaultCore.dir\src\entities\ColliderComponent.cpp.obj -c "C:\MyGithub\The Lost Vault\src\entities\ColliderComponent.cpp"
+
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\MyGithub\The Lost Vault\src\entities\ColliderComponent.cpp" > CMakeFiles\TheLostVaultCore.dir\src\entities\ColliderComponent.cpp.i
+
+CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\MyGithub\The Lost Vault\src\entities\ColliderComponent.cpp" -o CMakeFiles\TheLostVaultCore.dir\src\entities\ColliderComponent.cpp.s
+
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj: CMakeFiles/TheLostVaultCore.dir/flags.make
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj: CMakeFiles/TheLostVaultCore.dir/includes_CXX.rsp
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/gameplay/CollisionSystem.cpp
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj: CMakeFiles/TheLostVaultCore.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj -MF CMakeFiles\TheLostVaultCore.dir\src\gameplay\CollisionSystem.cpp.obj.d -o CMakeFiles\TheLostVaultCore.dir\src\gameplay\CollisionSystem.cpp.obj -c "C:\MyGithub\The Lost Vault\src\gameplay\CollisionSystem.cpp"
+
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.i"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "C:\MyGithub\The Lost Vault\src\gameplay\CollisionSystem.cpp" > CMakeFiles\TheLostVaultCore.dir\src\gameplay\CollisionSystem.cpp.i
+
+CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.s"
+	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\MyGithub\The Lost Vault\src\gameplay\CollisionSystem.cpp" -o CMakeFiles\TheLostVaultCore.dir\src\gameplay\CollisionSystem.cpp.s
+
 CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj: CMakeFiles/TheLostVaultCore.dir/flags.make
 CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj: CMakeFiles/TheLostVaultCore.dir/includes_CXX.rsp
 CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj: C:/MyGithub/The\ Lost\ Vault/src/levels/LevelData.cpp
 CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj: CMakeFiles/TheLostVaultCore.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj"
 	C:\MinGW\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj -MF CMakeFiles\TheLostVaultCore.dir\src\levels\LevelData.cpp.obj.d -o CMakeFiles\TheLostVaultCore.dir\src\levels\LevelData.cpp.obj -c "C:\MyGithub\The Lost Vault\src\levels\LevelData.cpp"
 
 CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.i: cmake_force
@@ -296,6 +326,8 @@ TheLostVaultCore_OBJECTS = \
 "CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj" \
 "CMakeFiles/TheLostVaultCore.dir/src/entities/GameObject.cpp.obj" \
 "CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.obj" \
+"CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj" \
+"CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj" \
 "CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj"
 
 # External object files for target TheLostVaultCore
@@ -314,10 +346,12 @@ libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/input/InputManager.cp
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.obj
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/entities/GameObject.cpp.obj
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/entities/Player.cpp.obj
+libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj
+libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/src/levels/LevelData.cpp.obj
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/build.make
 libTheLostVaultCore.a: CMakeFiles/TheLostVaultCore.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libTheLostVaultCore.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="C:\MyGithub\The Lost Vault\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libTheLostVaultCore.a"
 	$(CMAKE_COMMAND) -P CMakeFiles\TheLostVaultCore.dir\cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\TheLostVaultCore.dir\link.txt --verbose=$(VERBOSE)
 

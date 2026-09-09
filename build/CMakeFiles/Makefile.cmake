@@ -93,6 +93,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/TheLostVaultCore.dir/DependInfo.cmake"
   "CMakeFiles/TheLostVault.dir/DependInfo.cmake"
+  "CMakeFiles/TheLostVaultTests.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/glfw.dir/DependInfo.cmake"
   "_deps/glfw-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake"
   "_deps/glm-build/glm/CMakeFiles/glm.dir/DependInfo.cmake"

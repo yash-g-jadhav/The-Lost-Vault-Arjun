@@ -42,6 +42,8 @@ set(CORE_SOURCES
     src/entities/TransformComponent.cpp
     src/entities/GameObject.cpp
     src/entities/Player.cpp
+    src/entities/ColliderComponent.cpp
+    src/gameplay/CollisionSystem.cpp
     src/levels/LevelData.cpp
 )
 
@@ -63,7 +65,10 @@ set(CORE_HEADERS
     src/entities/TransformComponent.h
     src/entities/GameObject.h
     src/entities/Player.h
+    src/entities/ColliderComponent.h
+    src/gameplay/CollisionSystem.h
     src/levels/LevelData.h
+    src/utils/AABB.h
 )
 
 add_library(TheLostVaultCore STATIC ${CORE_SOURCES} ${CORE_HEADERS})
@@ -101,3 +106,9 @@ add_custom_command(
             $<TARGET_FILE_DIR:TheLostVault>/assets
     COMMENT "Copying assets directory to executable output folder..."
 )
+
+# Testing
+enable_testing()
+add_executable(TheLostVaultTests tests/test_collision.cpp)
+target_link_libraries(TheLostVaultTests PRIVATE TheLostVaultCore)
+add_test(NAME CollisionTests COMMAND TheLostVaultTests)

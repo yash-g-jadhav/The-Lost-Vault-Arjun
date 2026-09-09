@@ -64,6 +64,16 @@ CMAKE_BINARY_DIR = "C:\MyGithub\The Lost Vault\build"
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
+	C:\Users\yashj\AppData\Local\Programs\Python\Python310\Lib\site-packages\cmake\data\bin\ctest.exe $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+.PHONY : test/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
@@ -140,6 +150,19 @@ TheLostVault: cmake_check_build_system
 TheLostVault/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVault.dir\build.make CMakeFiles/TheLostVault.dir/build
 .PHONY : TheLostVault/fast
+
+#=============================================================================
+# Target rules for targets named TheLostVaultTests
+
+# Build rule for target.
+TheLostVaultTests: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 TheLostVaultTests
+.PHONY : TheLostVaultTests
+
+# fast build rule for target.
+TheLostVaultTests/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/build
+.PHONY : TheLostVaultTests/fast
 
 #=============================================================================
 # Target rules for targets named glfw
@@ -276,6 +299,30 @@ src/core/Log.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/core/Log.cpp.s
 .PHONY : src/core/Log.cpp.s
 
+src/entities/ColliderComponent.obj: src/entities/ColliderComponent.cpp.obj
+.PHONY : src/entities/ColliderComponent.obj
+
+# target to build an object file
+src/entities/ColliderComponent.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.obj
+.PHONY : src/entities/ColliderComponent.cpp.obj
+
+src/entities/ColliderComponent.i: src/entities/ColliderComponent.cpp.i
+.PHONY : src/entities/ColliderComponent.i
+
+# target to preprocess a source file
+src/entities/ColliderComponent.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.i
+.PHONY : src/entities/ColliderComponent.cpp.i
+
+src/entities/ColliderComponent.s: src/entities/ColliderComponent.cpp.s
+.PHONY : src/entities/ColliderComponent.s
+
+# target to generate assembly for a file
+src/entities/ColliderComponent.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/ColliderComponent.cpp.s
+.PHONY : src/entities/ColliderComponent.cpp.s
+
 src/entities/GameObject.obj: src/entities/GameObject.cpp.obj
 .PHONY : src/entities/GameObject.obj
 
@@ -347,6 +394,30 @@ src/entities/TransformComponent.s: src/entities/TransformComponent.cpp.s
 src/entities/TransformComponent.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/entities/TransformComponent.cpp.s
 .PHONY : src/entities/TransformComponent.cpp.s
+
+src/gameplay/CollisionSystem.obj: src/gameplay/CollisionSystem.cpp.obj
+.PHONY : src/gameplay/CollisionSystem.obj
+
+# target to build an object file
+src/gameplay/CollisionSystem.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.obj
+.PHONY : src/gameplay/CollisionSystem.cpp.obj
+
+src/gameplay/CollisionSystem.i: src/gameplay/CollisionSystem.cpp.i
+.PHONY : src/gameplay/CollisionSystem.i
+
+# target to preprocess a source file
+src/gameplay/CollisionSystem.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.i
+.PHONY : src/gameplay/CollisionSystem.cpp.i
+
+src/gameplay/CollisionSystem.s: src/gameplay/CollisionSystem.cpp.s
+.PHONY : src/gameplay/CollisionSystem.s
+
+# target to generate assembly for a file
+src/gameplay/CollisionSystem.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultCore.dir\build.make CMakeFiles/TheLostVaultCore.dir/src/gameplay/CollisionSystem.cpp.s
+.PHONY : src/gameplay/CollisionSystem.cpp.s
 
 src/glad.obj: src/glad.c.obj
 .PHONY : src/glad.obj
@@ -540,6 +611,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVault.dir\build.make CMakeFiles/TheLostVault.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/test_collision.obj: tests/test_collision.cpp.obj
+.PHONY : tests/test_collision.obj
+
+# target to build an object file
+tests/test_collision.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/tests/test_collision.cpp.obj
+.PHONY : tests/test_collision.cpp.obj
+
+tests/test_collision.i: tests/test_collision.cpp.i
+.PHONY : tests/test_collision.i
+
+# target to preprocess a source file
+tests/test_collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/tests/test_collision.cpp.i
+.PHONY : tests/test_collision.cpp.i
+
+tests/test_collision.s: tests/test_collision.cpp.s
+.PHONY : tests/test_collision.s
+
+# target to generate assembly for a file
+tests/test_collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\TheLostVaultTests.dir\build.make CMakeFiles/TheLostVaultTests.dir/tests/test_collision.cpp.s
+.PHONY : tests/test_collision.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -548,9 +643,11 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... test
 	@echo ... update_mappings
 	@echo ... TheLostVault
 	@echo ... TheLostVaultCore
+	@echo ... TheLostVaultTests
 	@echo ... glfw
 	@echo ... glm
 	@echo ... src/core/Application.obj
@@ -565,6 +662,9 @@ help:
 	@echo ... src/core/Log.obj
 	@echo ... src/core/Log.i
 	@echo ... src/core/Log.s
+	@echo ... src/entities/ColliderComponent.obj
+	@echo ... src/entities/ColliderComponent.i
+	@echo ... src/entities/ColliderComponent.s
 	@echo ... src/entities/GameObject.obj
 	@echo ... src/entities/GameObject.i
 	@echo ... src/entities/GameObject.s
@@ -574,6 +674,9 @@ help:
 	@echo ... src/entities/TransformComponent.obj
 	@echo ... src/entities/TransformComponent.i
 	@echo ... src/entities/TransformComponent.s
+	@echo ... src/gameplay/CollisionSystem.obj
+	@echo ... src/gameplay/CollisionSystem.i
+	@echo ... src/gameplay/CollisionSystem.s
 	@echo ... src/glad.obj
 	@echo ... src/glad.i
 	@echo ... src/glad.s
@@ -598,6 +701,9 @@ help:
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
+	@echo ... tests/test_collision.obj
+	@echo ... tests/test_collision.i
+	@echo ... tests/test_collision.s
 .PHONY : help
 
 
